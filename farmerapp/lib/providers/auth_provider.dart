@@ -35,6 +35,8 @@ class AuthProvider extends ChangeNotifier {
           data['user'],
         ),
       );
+debugPrint('LOGIN ROLE FROM BACKEND: ${_user!.role}');
+debugPrint('LOGIN USER: ${_user!.email}');
 
       final prefs =
           await SharedPreferences.getInstance();
